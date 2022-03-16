@@ -7,7 +7,9 @@
   --section-clr: #eff7fa;
   --border-radius: 5px;
   --transition: 0.5s;
+  --scale: 1.1;
   --transparent-green-clr: #33d1ccc7;
+  --txt-clr: rgba(255,255,255,.5);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -51,6 +53,10 @@ body {
 .navbar .search svg {
   cursor: pointer;
   color: var(--white-clr);
+  transition: var(--transition);
+}
+.navbar .search svg:hover {
+  color: var(--green-clr);
 }
 .navbar .navbar-toggler {
   color: var(--white-clr);
@@ -197,6 +203,10 @@ footer .copyright div span {
 footer .contact ul svg {
   height: 20px;
   width: 20px;
+}
+footer ul li a {
+  color: var(--txt-clr);
+  text-decoration: none;
 }
 footer .facebook {
   background-color: #1877f2;
